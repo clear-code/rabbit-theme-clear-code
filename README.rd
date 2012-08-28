@@ -20,7 +20,7 @@ The Rabbit theme for ClearCode Inc.
 
 === Show
 
-  rabbit -t rabbit-theme-clear-code rabbit-theme-benchmark-ja.gem
+  rabbit -t rabbit-theme-clear-code rabbit-theme-benchmark-en.gem
 
 == License
 
