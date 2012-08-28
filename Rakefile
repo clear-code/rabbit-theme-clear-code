@@ -23,7 +23,7 @@ config = YAML.load(File.read("config.yaml"))
 
 theme_id = config["id"]
 
-version = "1.0.0"
+version = "1.0.1"
 
 name = config["name"]
 email = config["email"]
