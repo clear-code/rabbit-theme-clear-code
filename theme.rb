@@ -21,8 +21,6 @@
 
 @title_slide_title_font_size = @x_large_font_size * 0.75
 
-include_theme("newline-in-slides")
-
 @slide_logo_image = "clear-code-headline-background.png"
 
 @block_quote_image_background_alpha = 0.3
