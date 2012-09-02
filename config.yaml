@@ -1,5 +1,16 @@
 ---
 id: clear-code
-name: Kouhei Sutou
-email: kou@clear-code.com
-rubygems_user: kou
+tags:
+- clear-code
+version: 1.0.1
+licenses:
+- GPLv3+
+- GFDL
+- CC BY-SA 3.0
+author:
+  markup_language: :rd
+  name: Kouhei Sutou
+  email: kou@clear-code.com
+  rubygems_user: kou
+  slideshare_user: kou
+  speaker_deck_user: 
