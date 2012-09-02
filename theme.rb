@@ -81,14 +81,9 @@ match("**", CustomTag) do |tags|
   tags.each do |tag|
     case tag.name
     when "center"
-      tag.parent.horizontal_centering = true
       if tag.parent.parent.elements.any? {|element| element.is_a?(Image)}
         tag.parent.margin_bottom *= 10
       end
-    when "right"
-      tag.parent.align = "right"
-    when "x-large"
-      tag.parent.prop_set("size", @x_large_font_size)
     end
   end
 end
