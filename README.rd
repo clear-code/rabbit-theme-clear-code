@@ -36,3 +36,8 @@ Use the following as the author:
   * ClearCode Inc.
   * 株式会社クリアコード
   * クリアコード
+
+Provided patches, codes and so on are also licensed under the same
+licenses. ClearCode Inc. can change the license of them. ClearCode
+Inc. considers that contributors agree with the rule when they
+contribute their patches, codes and so on.
