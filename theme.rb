@@ -53,10 +53,10 @@ match(Slide, Body) do |bodies|
     if body.elements.collect {|element| element.class} == [Paragraph]
       body.elements.each do |element|
         element.horizontal_centering = true
-        if element.text.size > 50
-          element.prop_set("size", @large_font_size)
-        else
+        if element.text.size < 50 or element.elements.any? {|e| e.is_a?(Note)}
           element.prop_set("size", @x_large_font_size)
+        else
+          element.prop_set("size", @large_font_size)
         end
         # element.as_large_as_possible("one-paragraph")
       end
