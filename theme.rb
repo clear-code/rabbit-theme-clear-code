@@ -41,9 +41,12 @@ match(Slide) do |slides|
     if slide.lightning_talk? and
         slide.body.elements.collect {|element| element.class} != [Image]
       slide.lightning_talk
-    elsif slide.title_on_image?
+    elsif slide.title_on_image? and slide["enable-title-on-image"] != "false"
+      slide.headline.padding_top = @space
+      slide.headline.padding_bottom = @space
+
       params = {}
-      # slide.title_on_image(params)
+      slide.title_on_image(params)
     end
   end
 end
