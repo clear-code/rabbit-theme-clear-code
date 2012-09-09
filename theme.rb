@@ -67,15 +67,6 @@ match(Slide, Body) do |bodies|
   end
 end
 
-match("**", BlockQuote) do |quotes|
-  quotes.each do |quote|
-    quote.each do |element|
-      # element.align = :center
-      element.prop_set("size", @small_font_size)
-    end
-  end
-end
-
 match("**", CustomTag) do |tags|
   tags.each do |tag|
     case tag.name
