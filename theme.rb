@@ -23,8 +23,6 @@
 
 @slide_logo_image = "clear-code-headline-background.png"
 
-@block_quote_image_background_alpha = 0.3
-
 include_theme("clear-blue")
 
 @icon_images = ["clear-code-icon.png"]
