@@ -17,7 +17,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-@font_family = find_font_family("MotoyaLMaru") || @font_family
+@clear_code_font_family ||= nil
+@font_family =
+  @clear_code_font_family ||
+  find_font_family("MotoyaLMaru") ||
+  @font_family
 
 @title_slide_title_font_size = @x_large_font_size * 0.75
 
