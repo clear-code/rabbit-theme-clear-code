@@ -57,7 +57,10 @@ match(Slide, Body) do |bodies|
   bodies.each do |body|
     if body.elements.collect {|element| element.class} == [Paragraph]
       body.elements.each do |element|
-        element.horizontal_centering = true
+        have_align_tag = false
+        have_align_tag = true if element.have_tag?("left")
+        have_align_tag = true if element.have_tag?("right")
+        element.horizontal_centering = true unless have_align_tag
         if element.have_tag?("as-large-as-possible")
           element.as_large_as_possible("one-paragraph")
         elsif element.text.size < 50 or element.elements.any? {|e| e.is_a?(Note)}
