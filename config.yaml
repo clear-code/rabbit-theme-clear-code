@@ -6,8 +6,8 @@ version: 1.0.4
 licenses:
 - GPLv3+
 - GFDL
-- CC BY-SA 3.0
-- CC BY-SA 4.0
+- CC-BY-SA-3.0
+- CC-BY-SA-4.0
 author:
   markup_language: :rd
   name: Kouhei Sutou
