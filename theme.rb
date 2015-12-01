@@ -23,7 +23,7 @@
   find_font_family("MotoyaLMaru") ||
   @font_family
 
-@title_slide_title_font_size = @x_large_font_size * 0.75
+@title_slide_title_font_size ||= @x_large_font_size * 0.75
 
 @slide_logo_image = "clear-code-headline-background.png"
 
