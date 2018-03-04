@@ -61,6 +61,7 @@ match(Slide, Body) do |bodies|
         have_align_tag = true if element.have_tag?("left")
         have_align_tag = true if element.have_tag?("right")
         element.horizontal_centering = true unless have_align_tag
+        next if body.slide["as-large-as-possible"] == "false"
         if element.have_tag?("as-large-as-possible")
           element.as_large_as_possible("one-paragraph")
         elsif element.text.size < 50 or element.elements.any? {|e| e.is_a?(Note)}
