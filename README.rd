@@ -18,6 +18,9 @@ The Rabbit theme for ClearCode Inc.
 
   gem install rabbit-theme-clear-code
 
+And this theme depends on the font "Motoya L Maruberi" ("モトヤLマルベリ" in Japanese).
+You should install it for your platform, e.g. `sudo apt install fonts-motoya-l-maruberi` on Ubuntu.
+
 === Show
 
   rabbit -t rabbit-theme-clear-code rabbit-theme-benchmark-en.gem
