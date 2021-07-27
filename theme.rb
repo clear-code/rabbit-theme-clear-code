@@ -21,6 +21,7 @@
 @font_family =
   @clear_code_font_family ||
   find_font_family("MotoyaLMaru") ||
+  find_font_family("モトヤLマルベリ") ||
   @font_family
 
 @title_slide_title_font_size ||= @x_large_font_size * 0.75
