@@ -56,6 +56,7 @@ jobs:
           ruby-version: ruby
       - name: Install dependencies
         run: |
+          gem install rubygems-requirements-system
           gem install rabbit
       - uses: rubygems/configure-rubygems-credentials@v1.0.0
       - name: Push gems
