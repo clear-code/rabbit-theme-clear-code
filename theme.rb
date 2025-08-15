@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-#
-# Copyright (C) 2012-2015  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2012-2025  Sutou Kouhei <kou@clear-code.com>
 #
 # License: GPLv3+, GFDL, CC BY-SA 3.0 and/or CC BY-SA 4.0
 #
@@ -31,7 +29,7 @@
 include_theme("clear-blue")
 
 @icon_images = ["clear-code-icon.png"]
-include_theme("icon")
+# include_theme("icon")
 
 @lightning_talk_proc_name = "lightning-clear-code"
 @lightning_talk_as_large_as_possible = true
